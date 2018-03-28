@@ -29,12 +29,12 @@ class Navigation extends Component {
                         <ListItemText primary="Home" />
                     </ListItem>
                 </Link>
-                <Link to="/books_list" style={styles.link}>
+                <Link to="/drinks_list" style={styles.link}>
                     <ListItem button>
                         <ListItemIcon>
                             <Book />
                         </ListItemIcon>
-                        <ListItemText primary="Books" />
+                        <ListItemText primary="Drinks" />
                     </ListItem>
                 </Link>
                 <Divider />

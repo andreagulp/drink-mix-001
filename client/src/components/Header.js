@@ -48,7 +48,6 @@ class Header extends Component {
 
     render() {
         const { classes, user } = this.props;
-        console.log(user)
 
         return (
             <div className={classes.root}>
@@ -63,7 +62,7 @@ class Header extends Component {
                             <MenuIcon />
                         </IconButton>
                         <Typography variant="title" color="inherit" className={classes.flex}>
-                            Book App
+                            Drink App
                         </Typography>
                         <LogIn user={user} />
                     </Toolbar>

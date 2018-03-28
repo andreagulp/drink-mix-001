@@ -6,10 +6,10 @@ import Dialog, {
     withMobileDialog
 } from 'material-ui/Dialog';
 
-import BookForm from '../components/bookForm/BookForm'
+import DrinkForm from '../components/drinkForm/DrinkForm'
+import DrinksList from '../components/drinksList/DrinksList'
 
-
-class BookPage extends Component {
+class DrinkPage extends Component {
     constructor(props) {
         super(props)
         this.state = {
@@ -30,7 +30,7 @@ class BookPage extends Component {
 
         return (
             <div>
-                <h4>BookPage Component Working</h4>
+                <DrinksList />
                 <Button
                     variant="fab"
                     color="primary"
@@ -46,9 +46,10 @@ class BookPage extends Component {
                     aria-labelledby="responsive-dialog-title"
                     fullScreen
                 >
-                    <DialogTitle id="simple-dialog-title">Create New Book</DialogTitle>
-                    <BookForm
+                    <DialogTitle id="simple-dialog-title">Create New Drink</DialogTitle>
+                    <DrinkForm
                         handleDialogClose={this.handleDialogClose}
+                        history={this.props.history}
                     />
                 </Dialog>
             </div>
@@ -56,4 +57,4 @@ class BookPage extends Component {
     }
 };
 
-export default withMobileDialog()(BookPage)
+export default withMobileDialog()(DrinkPage)

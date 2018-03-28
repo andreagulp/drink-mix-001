@@ -6,7 +6,7 @@ import { withRouter } from "react-router-dom";
 
 import { fetchUser } from './actions/userAction'
 import HomePage from './pages/HomePage'
-import BookPage from './pages/BookPage'
+import DrinkPage from './pages/DrinkPage'
 import UserPage from './pages/UserPage'
 import Header from './components/Header'
 
@@ -21,7 +21,7 @@ class App extends Component {
             <div>
                 <Header />
                 <Switch>
-                    <Route path="/books_list" component={BookPage} />
+                    <Route path="/drinks_list" component={DrinkPage} />
                     <Route path="/user" component={UserPage} />
                     <Route path="/" component={HomePage} />
                 </Switch>
